@@ -1,0 +1,24 @@
+package com.nt.beans;
+
+import org.springframework.context.annotation.Primary;
+import org.springframework.stereotype.Component;
+
+@Component
+@Primary
+public  class PetrolEngine implements Engine {
+	public PetrolEngine() {
+		System.out.println("PetrolEngine::O-param constuctor");
+	}
+
+	@Override
+	public void strat() {		
+		System.out.println("PetrolEngine::engine Started");
+	}
+
+	@Override
+	public void stop() {
+		System.out.println("PetrolEngine::engine Stopped");
+
+	}
+
+}

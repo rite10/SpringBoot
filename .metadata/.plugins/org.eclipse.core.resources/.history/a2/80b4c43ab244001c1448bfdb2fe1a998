@@ -1,0 +1,23 @@
+package com.nt.beans;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
+
+@Component("vehicle")
+public final class Vehicle{
+	@Autowired
+	@Qualifier("diesel")
+	private Engine engg;
+	public Vehicle() {
+		System.out.println("Vehicle::0-param constructor");
+	}
+	//b.method using bthe dependent
+	public void journey(String startplace,String destplace) {
+		engg.start();
+		System.out.println("Vehicle::journey strated at::"+startplace);
+		System.out.println("Journey going on");
+		engg.stop();
+		System.out.println("Vehicle::journey::"+destplace);
+	}
+}

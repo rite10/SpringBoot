@@ -1,0 +1,20 @@
+package com.nt.beans;
+
+public  class PetrolEngine implements Engine {
+	public PetrolEngine() {
+		System.out.println("PetroleEngine::O-param constuctor");
+	}
+
+	@Override
+	public void strat() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void stop() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

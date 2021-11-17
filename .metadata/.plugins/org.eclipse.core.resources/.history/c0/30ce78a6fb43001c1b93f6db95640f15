@@ -1,0 +1,24 @@
+package com.nt.beans;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class DieselEngine implements Engine {
+	public DieselEngine() {
+		System.out.println("DieselEngine::0param constructor");
+	}
+
+	
+
+	@Override
+	public void strat() {
+		
+		
+	}
+
+	@Override
+	public void stop() {
+		
+	}
+
+}

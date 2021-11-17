@@ -1,0 +1,7 @@
+package com.nt.beans;
+
+public interface Engine {
+	public void strat();
+	public void stop();
+
+}
